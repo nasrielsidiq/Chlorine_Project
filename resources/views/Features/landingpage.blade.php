@@ -149,13 +149,13 @@
           <div class="row">
             <div class="col-md-6 mt-3">
                 <div class="lefet" style="position: absolute;">
-                    <h2 class="fw-bold" style="margin: 200px 0px 0px 120px; color: #082D33; width: 340px;">Temukan Peluang PKL yang tepat untuk mu di Sini</h2>
+                    <h2 class="fw-bold" style="margin: 300px 0px 0px 120px; color: #082D33; width: 340px;">Temukan Peluang PKL yang tepat untuk mu di Sini</h2>
                     <p style="width: 300px; margin: 12px 0px 0px 120px;">Membantu siswa untuk menemukan tempat<b> PKL </b>yang sesuai dengan jurusan dan keahlian.</p>
                     <a href="" class="btn text-white ps-3 pe-3 mt-2" style="background-color: #0E939A; border-radius: 20px; margin-left: 120px;">Temukan Sekarang!!</a>
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="img/laptop.png" width="450px" style="position: absolute; z-index: 1; top: 160px; margin-left: 100px;" h alt="">
+                <img src="img/laptop.png" width="450px" style="position: absolute; z-index: 1; top: 300px; margin-left: 100px;" h alt="">
             </div>
           </div>
     </div>
