@@ -51,11 +51,80 @@
                             style="border-radius: 12px; background-color: #F6F6F6;" type="number" name="npsn"
                             id="nisn">
                     </div>
-                    {{-- <div class="col-md-12 mt-3">
-                    <label for="alamat" class="ms-2">Alamat</label>
-                    <textarea name="" class="form-control mt-2 border-0" style="border-radius: 12px; background-color: #F6F6F6;"
-                        id="alamat" rows="4"></textarea>
-                </div> --}}
+                    <div class="col-md-12 mt-1">
+                        <label for="" class="ms-2 my-2">Passion</label>
+                        <div class="d-flex">
+                            <div class="row ms-3 ">
+                                @for ($i = 0; $i < 3; $i++)
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemogramasadn</p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemo</p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemogramasadasdsadn</p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemossdf  </p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                @endfor
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-1">
+                        <label for="" class="ms-2 my-2">Potency</label>
+                        <div class="d-flex">
+                            <div class="row ms-3 ">
+                                @for ($i = 0; $i < 3; $i++)
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemogramasadn</p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemo</p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemogramasadasdsadn</p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-auto rounded-pill d-flex align-items-center mb-2"
+                                        style="height: 2rem; border: 2px #082D33 solid">
+                                        <p class="me-1 my-4" >Pemossdf  </p>
+                                        <a href="me-auto" class="nav-link text-dark ">
+                                            <i class="fi fi-br-cross" style="font-size: 0.8rem"></i>
+                                        </a>
+                                    </div>
+                                @endfor
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-12 mt-4">
                         <a href="/shool-page" class="btn btn-secondary pe-5 ps-5 me-5 text-white"
                             style="border-radius:20px">Cancel

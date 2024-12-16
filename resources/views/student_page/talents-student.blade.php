@@ -32,10 +32,13 @@
                         @endfor
                     </div>
                 </div>
+                <div class="col-2 ms-auto">
+                    <div class="btn text-white fw-bold rounded-pill" style="background: #0E939A;">Choose</div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="" style="height: 60vh">
+    <div class="" style="height: 65vh">
         <div class="row mx-5">
             <div class="col-5 d-flex flex-column align-items-center" style="height: 40vh">
                 <h2 class="fw-bold text-white">Find the right <br>internship for you</h2>
@@ -65,6 +68,9 @@
                         </div>
                     @endfor
                 </div>
+            </div>
+            <div class="col-2 ms-auto">
+                <div class="btn text-white fw-bold rounded-pill" style="background: #0E939A;">Choose</div>
             </div>
         </div>
     </div>

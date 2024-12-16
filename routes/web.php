@@ -9,5 +9,5 @@ Route::get('/task', function () {
     return view('student_page.profille-student');
 });
 Route::get('/profile', function () {
-    return view('student_page.talents-student');
+    return view('student_page.profile-student');
 });
