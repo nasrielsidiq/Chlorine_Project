@@ -115,6 +115,23 @@
             padding: 20px;
             border-radius: 10px;
         }
+        .img-container {
+            margin-top: -300px;
+            z-index: 0;
+            position: relative;
+            height: 94vh; /* Tinggi penuh layar */
+            background: url("{{ asset('img/gelombang.png') }}") no-repeat center center/cover;
+        }
+        footer {
+            position: absolute;
+            bottom: 16vh;
+            width: 100%;
+            color: white;
+        }
+        .social-icon img {
+            width: 30px;
+            margin-right: 10px;
+        }
 </style>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -151,8 +168,74 @@
             </div>
           </nav>
     </div>
-    <div class="container" style="margin-top:10rem">
-        <input class="w-100 p-2 border-1" style="background-color: #D9D9D9 ; border-radius:20px ; " type="search" name="serach" id="">
+    <div class="container" style="margin-top:8rem ; z-index: 100;">
+        <input class="w-100 p-2 border-1" style="background-color: #D9D9D9 ; border-radius:12px ; " placeholder="Cari di sini..." type="search" name="serach" id="">
+        <div class="tasks mt-5">
+            <div class="task w-100" >
+                <p class="fw-bold pb-2" style="border-bottom: 1px solid black">Today</p>
+                @for ($i = 0; $i < 2; $i++)
+                <div class="card w-100 mt-3" style="border-bottom: 4px solid #D9D9D9 ">
+                    <div class="text p-4" style="background-color: #DBE8EF">
+                        <h5 class="card-title">tugas {{$i+1}}</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, hic soluta. Suscipit, nesciunt. Dolore, quae quisquam. Tempore cumque praesentium nostrum?</p>
+                    </div>
+                </div>
+            @endfor
+            </div>
+            <div class="task w-100 mt-3" >
+                <p class="fw-bold pb-2" style="border-bottom: 1px solid black">Yesterday</p>
+                @for ($i = 0; $i < 1; $i++)
+                <div class="card w-100 mt-3" style="border-bottom: 4px solid #D9D9D9 ">
+                    <div class="text p-4" style="background-color: #DBE8EF">
+                        <h5 class="card-title">tugas {{$i+1}}</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, hic soluta. Suscipit, nesciunt. Dolore, quae quisquam. Tempore cumque praesentium nostrum?</p>
+                    </div>
+                </div>
+            @endfor
+            </div>
+        </div>
     </div>
+    <div class="img-container">
+        <!-- Footer -->
+        <footer class="py-4">
+            <div class="container">
+                <div class="row border-bottom pb-3">
+                    <!-- Kolom 1: PKLzone -->
+                    <div class="col-md-4 mb-3">
+                        <h5>PKLzone</h5>
+                        <p>Tagline</p>
+                    </div>
+                    <!-- Kolom 2: Layanan -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Layanan</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <!-- Kolom 3: Kerjasama -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Kerjasama</h5>
+                        <div>
+                            <img src="{{ asset('img/smkypc.png') }}" alt="Logo 1" width="50" class="me-2">
+                            <img src="{{ asset('img/smkpk.png') }}" alt="Logo 2" width="50" class="me-2">
+                            <img src="{{ asset('img/chlorine.png') }}" alt="Logo 3" width="50">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- Sosial Media dan Copyright -->
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="social-icon">
+                        <img src="{{ asset('img/ig.png') }}" alt="Instagram">
+                        <img src="{{ asset('img/yt.png') }}" alt="YouTube">
+                    </div>
+                    <h5 class="fw-bold mb-0">2024 PKLzone</h5>
+                </div>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
